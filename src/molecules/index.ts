@@ -5,3 +5,5 @@ export * from "./NavDropdownButton";
 export * from "./Alert";
 export * from "./Modal";
 export * from "./ExpandableCard";
+export * from "./NavSettings";
+export * from "./NavAppLauncher";

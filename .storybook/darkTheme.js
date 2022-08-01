@@ -5,7 +5,7 @@ export default create({
     base: "dark",
     brandTitle: "Tracer DAO",
     brandUrl: "https://tracer.finance",
-    brandImage: "/tracer_logo.svg",
+    brandImage: "/tracer/tracer_logo.svg",
 
     colorPrimary: darkTheme.colors.action.active,
     colorSecondary: darkTheme.colors.action.active,

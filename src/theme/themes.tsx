@@ -48,6 +48,9 @@ export interface TracerTheme {
         body: string;
         heading: string;
     };
+    animationSpeed: {
+        default: string;
+    };
 }
 
 export const darkTheme: TracerTheme = {
@@ -99,6 +102,9 @@ export const darkTheme: TracerTheme = {
     fontFamily: {
         heading: "'Inter', sans-serif",
         body: "'Source Sans Pro', sans-serif",
+    },
+    animationSpeed: {
+        default: "0.3",
     },
 };
 

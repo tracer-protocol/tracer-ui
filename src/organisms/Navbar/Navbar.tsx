@@ -4,7 +4,7 @@ import { device } from "../../helpers";
 import styled from "styled-components";
 import { List } from "../../atoms";
 import { NavbarProps } from ".";
-import TracerLogo from "../../assets/tracer_logo.svg";
+import TracerLogo from "../../assets/tracer/tracer_logo.svg";
 
 const Navbar = <Link extends string>({
     children,

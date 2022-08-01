@@ -3,7 +3,11 @@ import React from "react";
 import Navbar from "./Navbar";
 import { NavbarProps } from "./Navbar.types";
 import { ComponentMeta, Story } from "@storybook/react";
-import { NavDropdownButton } from "../../molecules";
+import {
+    NavAppLauncher,
+    NavDropdownButton,
+    NavSettings,
+} from "../../molecules";
 
 export default {
     title: "organisms/Navbar",
@@ -80,21 +84,35 @@ WithChildren.args = {
     ],
     activeLink: "#2",
     children: (
-        <NavDropdownButton
-            placement="bottom-end"
-            dropdownItems={[
-                {
-                    key: "arbitrum",
-                    content: "Arbitrum",
-                },
-                {
-                    key: "arb-rinkeby",
-                    content: "Arbitrum Rinkeby",
-                },
-            ]}
-            onItemClick={console.log}
-        >
-            Connect Wallet
-        </NavDropdownButton>
+        <>
+            <NavDropdownButton
+                placement="bottom-end"
+                dropdownItems={[
+                    {
+                        key: "arbitrum",
+                        content: "Arbitrum",
+                    },
+                    {
+                        key: "arb-rinkeby",
+                        content: "Arbitrum Rinkeby",
+                    },
+                ]}
+                onItemClick={console.log}
+            >
+                Connect Wallet
+            </NavDropdownButton>
+            <NavSettings
+                navMenuOpen={false}
+                setNavMenuOpen={console.log}
+                showSettingsPopout={false}
+                setShowSettingsPopout={console.log}
+            />
+            <NavAppLauncher
+                navMenuOpen={false}
+                setNavMenuOpen={console.log}
+                showAppLauncher={false}
+                setShowAppLauncher={console.log}
+            />
+        </>
     ),
 };
